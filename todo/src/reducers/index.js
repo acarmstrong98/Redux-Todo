@@ -9,7 +9,7 @@ const tasksReducer = (state =[], action) => {
             break;
 
         case 'DELETE_TASK':
-            stae = state.state.slic();
+            state = state.state.slic();
             state.splice(action.payload,1)
             break;
 
@@ -23,4 +23,4 @@ reducers = combineReducers({
     
 })
 
-export default reducers 
+export default reducers;
